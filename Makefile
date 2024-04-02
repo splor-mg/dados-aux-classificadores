@@ -27,7 +27,7 @@ check:
 	frictionless validate datapackage.json
 
 publish:
-	git add -Af datapackage.json data/*.csv data-raw/*.$(EXT)
+	git add -Af datapackage.json data/*.csv.gz data-raw/*.$(EXT)
 	git commit --author="Automated <actions@users.noreply.github.com>" -m "Update data package at: $$(date +%Y-%m-%dT%H:%M:%SZ)" || exit 0
 	git push
 
