@@ -13,7 +13,7 @@ fields:
     target: subfuncao_cod
   - name: Subfunção - Descrição
     type: string
-    target: subfuncao_desc
+    target: subfuncao_cod
   - name: Programa - Código
     type: integer
     target: programa_cod
