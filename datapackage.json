@@ -1,0 +1,271 @@
+{
+  "name": "tabela-auxiliar",
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "aux-acao",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/aux-acao.csv.gz",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "compression": "gz",
+      "encoding": "utf-8",
+      "hash": "sha256:561186bd20e04918b1518a14a3862d8fbd8b4ae457e4fcb832c218da4ead5f70",
+      "bytes": 267000,
+      "fields": 3,
+      "rows": 17584,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano de Exercício"
+          },
+          {
+            "name": "acao_cod",
+            "type": "integer",
+            "source": "Projeto_Atividade - Código"
+          },
+          {
+            "name": "acao_desc",
+            "type": "string",
+            "source": "Projeto_Atividade - Descrição"
+          }
+        ]
+      }
+    },
+    {
+      "name": "aux-elemento-item",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/aux-elemento-item.csv.gz",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "compression": "gz",
+      "encoding": "utf-8",
+      "hash": "sha256:6f70680c63c4e094b6514ef4c6bbe29279ac56c191b6499ae607509aa7ccab9f",
+      "bytes": 38725,
+      "fields": 3,
+      "rows": 8588,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano de Exercício"
+          },
+          {
+            "name": "elemento-item_cod",
+            "type": "integer",
+            "source": "Elemento Item Despesa - Código"
+          },
+          {
+            "name": "elemento-item_desc",
+            "type": "string",
+            "source": "Elemento Item Despesa - Descrição"
+          }
+        ]
+      }
+    },
+    {
+      "name": "aux-fonte-recurso",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/aux-fonte-recurso.csv.gz",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "compression": "gz",
+      "encoding": "utf-8",
+      "hash": "sha256:31358fb4e3e1fec26e40641702d2cd7efa12b5c84ddbdd778be1fa7ff625dc91",
+      "bytes": 5443,
+      "fields": 3,
+      "rows": 993,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano de Exercício"
+          },
+          {
+            "name": "fonte_cod",
+            "type": "integer",
+            "source": "Fonte Recurso - Código"
+          },
+          {
+            "name": "fonte_desc",
+            "type": "string",
+            "source": "Fonte Recurso - Descrição"
+          }
+        ]
+      }
+    },
+    {
+      "name": "aux-funcional-programatica",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/aux-funcional-programatica.csv.gz",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "compression": "gz",
+      "encoding": "utf-8",
+      "hash": "sha256:db72c5e810ec172c2b71bf46923c80ce686ce7b17f57635a5da0888040b09872",
+      "bytes": 468746,
+      "fields": 9,
+      "rows": 19247,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano de Exercício"
+          },
+          {
+            "name": "funcao_cod",
+            "type": "integer",
+            "source": "Função - Código"
+          },
+          {
+            "name": "funcao_desc",
+            "type": "string",
+            "source": "Função - Descrição"
+          },
+          {
+            "name": "subfuncao_cod",
+            "type": "integer",
+            "source": "Subfunção - Código"
+          },
+          {
+            "name": "subfuncao_desc",
+            "type": "string",
+            "source": "Subfunção - Descrição"
+          },
+          {
+            "name": "programa_cod",
+            "type": "integer",
+            "source": "Programa - Código"
+          },
+          {
+            "name": "programa_desc",
+            "type": "string",
+            "source": "Programa - Descrição"
+          },
+          {
+            "name": "acao_cod",
+            "type": "integer",
+            "source": "Projeto_Atividade - Código"
+          },
+          {
+            "name": "acao_desc",
+            "type": "string",
+            "source": "Projeto_Atividade - Descrição"
+          }
+        ]
+      }
+    },
+    {
+      "name": "aux-natureza-receita",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/aux-natureza-receita.csv.gz",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "compression": "gz",
+      "encoding": "utf-8",
+      "hash": "sha256:9e5abd45a09d86118b4093aadd75952f41eda640e29fe44404e5dc9ff2be9369",
+      "bytes": 180190,
+      "fields": 3,
+      "rows": 12815,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano de Exercício"
+          },
+          {
+            "name": "rec_cod",
+            "type": "integer",
+            "source": "Classificação Receita - Código"
+          },
+          {
+            "name": "rec_desc",
+            "type": "string",
+            "source": "Classificação Receita - Descrição"
+          }
+        ]
+      }
+    },
+    {
+      "name": "aux-uo",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/aux-uo.csv.gz",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "compression": "gz",
+      "encoding": "utf-8",
+      "hash": "sha256:f00d5fe2e60928491d657132e9ac5501156ab481ddbb08c3a3cb13f2c2eebe63",
+      "bytes": 22642,
+      "fields": 9,
+      "rows": 3670,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano de Exercício"
+          },
+          {
+            "name": "orgao-vinculacao_cod",
+            "type": "integer",
+            "source": "Órgão Vinculação Orçam - Código"
+          },
+          {
+            "name": "orgao-vinculacao_nome",
+            "type": "string",
+            "source": "Órgão Vinculação Orçam - Nome"
+          },
+          {
+            "name": "poder_cod",
+            "type": "integer",
+            "source": "Poder Unid Orçamentária - Código"
+          },
+          {
+            "name": "poder_desc",
+            "type": "string",
+            "source": "Poder Unid Orçamentária - Descrição"
+          },
+          {
+            "name": "uo_cod",
+            "type": "integer",
+            "source": "Unidade Orçamentária - Código"
+          },
+          {
+            "name": "uo_nome",
+            "type": "string",
+            "source": "Unidade Orçamentária - Nome"
+          },
+          {
+            "name": "uo_sigla",
+            "type": "string",
+            "source": "Unidade Orçamentária - Sigla"
+          },
+          {
+            "name": "ano_uo",
+            "type": "integer",
+            "source": "Ano Exercício Unidade Orçamentária"
+          }
+        ]
+      }
+    }
+  ],
+  "updated_at": "2024-04-02T18:13:19"
+}
