@@ -8,10 +8,6 @@ fields:
   - name: Fonte Recurso - Descrição
     type: string
     target: fonte_desc
-  - name: Valor Crédito Autorizado
-    type: number
-    target: vlr_credito_autorizado
-    decimalChar: ','
 
 missingValues:
   - "    " 

@@ -8,25 +8,25 @@ fields:
   - name: Órgão Vinculação Orçam - Nome
     type: string
     target: orgao-vinculacao_nome
-  - name: Unidade Orçamentária - Código
-    type: integer
-    target: uo_cod
-  - name: Unidade Orçamentária - Sigla
-    type: string
-    target: uo_sigla
   - name: Poder Unid Orçamentária - Código
     type: integer
     target: poder_cod
-  - name: Poder Unid Orçamentária - Desc
+  - name: Poder Unid Orçamentária - Descrição
     type: string
     target: poder_desc
+  - name: Unidade Orçamentária - Código
+    type: integer
+    target: uo_cod
+  - name: Unidade Orçamentária - Nome
+    type: string
+    target: uo_nome
+  - name: Unidade Orçamentária - Sigla
+    type: string
+    target: uo_sigla
   - name: Ano Exercício Unidade Orçamentária
     type: integer
     target: ano_uo
-  - name: Valor Crédito Autorizado
-    type: number
-    target: vlr_credito_autorizado
-    decimalChar: ','
+
 
 missingValues:
   - "    " 

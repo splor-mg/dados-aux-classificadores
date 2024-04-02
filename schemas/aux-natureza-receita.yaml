@@ -8,18 +8,7 @@ fields:
   - name: Classificação Receita - Descrição
     type: string
     target: rec_desc
-  - name: Valor Previsto Inicial
-    type: number
-    target: vlr_previsto_inicial
-    decimalChar: ','
-  - name: Valor Previsto Adicional
-    type: number
-    target: vlr_previsto_adicional
-    decimalChar: ','
-  - name: Valor Efetivado Ajustado
-    type: number
-    target: vlr_efetivado_ajustado
-    decimalChar: ','
+
 
 missingValues:
   - "    " 
