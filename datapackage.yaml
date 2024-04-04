@@ -1,61 +1,61 @@
-name: tabela-auxiliar
+name: aux_classificadores
 resources: 
-  - name: aux-acao
+  - name: acao
     type: table
-    path: ["data-raw/aux-acao-rp.csv", "data-raw/aux-acao-previous.csv", "data-raw/aux-acao-current.csv"]
+    path: ["data-raw/acao_rp.csv", "data-raw/acao_previous.csv", "data-raw/acao_current.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/aux-acao.yaml
+    schema: schemas/acao.yaml
 
-  - name: aux-elemento-item
+  - name: elemento_item
     type: table
-    path: ["data-raw/aux-elem-item-rp.csv", "data-raw/aux-elem-item-previous.csv", "data-raw/aux-elem-item-current.csv"]
+    path: ["data-raw/elemento_item_rp.csv", "data-raw/elemento_item_previous.csv", "data-raw/elemento_item_current.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/aux-elemento-item.yaml
+    schema: schemas/elemento_item.yaml
 
-  - name: aux-fonte-recurso
+  - name: fonte_recurso
     type: table
-    path: ["data-raw/aux-fonte-recurso-rp.csv", "data-raw/aux-fonte-recurso-previous.csv", "data-raw/aux-fonte-recurso-current.csv"]
+    path: ["data-raw/fonte_recurso_rp.csv", "data-raw/fonte_recurso_previous.csv", "data-raw/fonte_recurso_current.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/aux-fonte-recurso.yaml
+    schema: schemas/fonte_recurso.yaml
 
-  - name: aux-funcional-programatica
+  - name: funcional_programatica
     type: table
-    path: ["data-raw/aux-funcional-programatica-rp.csv", "data-raw/aux-funcional-programatica-previous.csv", "data-raw/aux-funcional-programatica-current.csv"]
+    path: ["data-raw/funcional_programatica_rp.csv", "data-raw/funcional_programatica_previous.csv", "data-raw/funcional_programatica_current.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/aux-funcional-programatica.yaml
+    schema: schemas/funcional_programatica.yaml
 
-  - name: aux-natureza-receita
+  - name: natureza_receita
     type: table
-    path: ["data-raw/aux-natureza-receita-previous.csv", "data-raw/aux-natureza-receita-current.csv"]
+    path: ["data-raw/natureza_receita_previous.csv", "data-raw/natureza_receita_current.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/aux-natureza-receita.yaml
+    schema: schemas/natureza_receita.yaml
 
-  - name: aux-uo
+  - name: uo
     type: table
-    path: ["data-raw/aux-uo-rp.csv", "data-raw/aux-uo-previous.csv", "data-raw/aux-uo-current.csv"]
+    path: ["data-raw/uo_rp.csv", "data-raw/uo_previous.csv", "data-raw/uo_current.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/aux-uo.yaml
+    schema: schemas/uo.yaml

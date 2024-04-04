@@ -1,19 +1,19 @@
 {
-  "name": "tabela-auxiliar",
+  "name": "aux_classificadores",
   "profile": "tabular-data-package",
   "resources": [
     {
-      "name": "aux-acao",
+      "name": "acao",
       "type": "table",
       "profile": "tabular-data-resource",
-      "path": "data/aux-acao.csv.gz",
+      "path": "data/acao.csv.gz",
       "scheme": "file",
       "format": "csv",
       "mediatype": "text/csv",
       "compression": "gz",
       "encoding": "utf-8",
-      "hash": "sha256:561186bd20e04918b1518a14a3862d8fbd8b4ae457e4fcb832c218da4ead5f70",
-      "bytes": 267000,
+      "hash": "sha256:fb3b8b871f6cbedb5b8eb7a00549da8f56708aed4a905e429ed3829ef3b352a4",
+      "bytes": 266996,
       "fields": 3,
       "rows": 17584,
       "schema": {
@@ -37,17 +37,17 @@
       }
     },
     {
-      "name": "aux-elemento-item",
+      "name": "elemento_item",
       "type": "table",
       "profile": "tabular-data-resource",
-      "path": "data/aux-elemento-item.csv.gz",
+      "path": "data/elemento_item.csv.gz",
       "scheme": "file",
       "format": "csv",
       "mediatype": "text/csv",
       "compression": "gz",
       "encoding": "utf-8",
-      "hash": "sha256:6f70680c63c4e094b6514ef4c6bbe29279ac56c191b6499ae607509aa7ccab9f",
-      "bytes": 38725,
+      "hash": "sha256:b59befb86af7cda18d798a748d49c91be5ad9eb4e63b5fc7fa293a85fb5b7ac8",
+      "bytes": 38722,
       "fields": 3,
       "rows": 8588,
       "schema": {
@@ -58,12 +58,12 @@
             "source": "Ano de Exercício"
           },
           {
-            "name": "elemento-item_cod",
+            "name": "elemento_item_cod",
             "type": "integer",
             "source": "Elemento Item Despesa - Código"
           },
           {
-            "name": "elemento-item_desc",
+            "name": "elemento_item_desc",
             "type": "string",
             "source": "Elemento Item Despesa - Descrição"
           }
@@ -71,17 +71,17 @@
       }
     },
     {
-      "name": "aux-fonte-recurso",
+      "name": "fonte_recurso",
       "type": "table",
       "profile": "tabular-data-resource",
-      "path": "data/aux-fonte-recurso.csv.gz",
+      "path": "data/fonte_recurso.csv.gz",
       "scheme": "file",
       "format": "csv",
       "mediatype": "text/csv",
       "compression": "gz",
       "encoding": "utf-8",
-      "hash": "sha256:31358fb4e3e1fec26e40641702d2cd7efa12b5c84ddbdd778be1fa7ff625dc91",
-      "bytes": 5443,
+      "hash": "sha256:b4bea5dbb84132c4649c808cb2152022655e82166a7edd18b71510fc611d4f17",
+      "bytes": 5439,
       "fields": 3,
       "rows": 993,
       "schema": {
@@ -105,25 +105,30 @@
       }
     },
     {
-      "name": "aux-funcional-programatica",
+      "name": "funcional_programatica",
       "type": "table",
       "profile": "tabular-data-resource",
-      "path": "data/aux-funcional-programatica.csv.gz",
+      "path": "data/funcional_programatica.csv.gz",
       "scheme": "file",
       "format": "csv",
       "mediatype": "text/csv",
       "compression": "gz",
       "encoding": "utf-8",
-      "hash": "sha256:db72c5e810ec172c2b71bf46923c80ce686ce7b17f57635a5da0888040b09872",
-      "bytes": 468746,
-      "fields": 9,
-      "rows": 19247,
+      "hash": "sha256:e6a449f9a6fb2b645efbadfdca4fdb8d13076a2448e6a6523349000b5721605b",
+      "bytes": 593039,
+      "fields": 10,
+      "rows": 25888,
       "schema": {
         "fields": [
           {
             "name": "ano",
             "type": "integer",
             "source": "Ano de Exercício"
+          },
+          {
+            "name": "uo_cod",
+            "type": "integer",
+            "source": "Unidade Orçamentária - Código"
           },
           {
             "name": "funcao_cod",
@@ -169,17 +174,17 @@
       }
     },
     {
-      "name": "aux-natureza-receita",
+      "name": "natureza_receita",
       "type": "table",
       "profile": "tabular-data-resource",
-      "path": "data/aux-natureza-receita.csv.gz",
+      "path": "data/natureza_receita.csv.gz",
       "scheme": "file",
       "format": "csv",
       "mediatype": "text/csv",
       "compression": "gz",
       "encoding": "utf-8",
-      "hash": "sha256:9e5abd45a09d86118b4093aadd75952f41eda640e29fe44404e5dc9ff2be9369",
-      "bytes": 180190,
+      "hash": "sha256:fa7921429f8248cab0ab9e7b503961d04ab899e9ca123dabd4a0fc115292209e",
+      "bytes": 180186,
       "fields": 3,
       "rows": 12815,
       "schema": {
@@ -203,17 +208,17 @@
       }
     },
     {
-      "name": "aux-uo",
+      "name": "uo",
       "type": "table",
       "profile": "tabular-data-resource",
-      "path": "data/aux-uo.csv.gz",
+      "path": "data/uo.csv.gz",
       "scheme": "file",
       "format": "csv",
       "mediatype": "text/csv",
       "compression": "gz",
       "encoding": "utf-8",
-      "hash": "sha256:f00d5fe2e60928491d657132e9ac5501156ab481ddbb08c3a3cb13f2c2eebe63",
-      "bytes": 22642,
+      "hash": "sha256:3a2007f771e5095bc0f0c0816e8379f262bf3a59c00310fa43aec9d0f06876cc",
+      "bytes": 22634,
       "fields": 9,
       "rows": 3670,
       "schema": {
@@ -224,12 +229,12 @@
             "source": "Ano de Exercício"
           },
           {
-            "name": "orgao-vinculacao_cod",
+            "name": "orgao_vinculacao_cod",
             "type": "integer",
             "source": "Órgão Vinculação Orçam - Código"
           },
           {
-            "name": "orgao-vinculacao_nome",
+            "name": "orgao_vinculacao_nome",
             "type": "string",
             "source": "Órgão Vinculação Orçam - Nome"
           },
@@ -267,5 +272,5 @@
       }
     }
   ],
-  "updated_at": "2024-04-02T18:13:19"
+  "updated_at": "2024-04-04T18:45:42"
 }

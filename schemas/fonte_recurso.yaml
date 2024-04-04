@@ -1,0 +1,19 @@
+fields:
+  - name: Ano de Exercício
+    type: integer
+    target: ano
+  - name: Fonte Recurso - Código
+    type: integer
+    target: fonte_cod
+  - name: Fonte Recurso - Descrição
+    type: string
+    target: fonte_desc
+
+missingValues:
+  - "    " 
+  - "   "  
+  - " -   "
+  - "-   "
+  - " "
+  - ""
+  - " - "
