@@ -23,9 +23,6 @@ fields:
   - name: Unidade Orçamentária - Sigla
     type: string
     target: uo_sigla
-  - name: Ano Exercício Unidade Orçamentária
-    type: integer
-    target: ano_uo
 
 primaryKey:
   - Ano de Exercício

@@ -211,10 +211,10 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:9860396e1b5c3d288dcc74e1be845448f1de335b9fa7dda5aaa2e4ef1e87330d",
-      "bytes": 496121,
-      "fields": 9,
-      "rows": 3670,
+      "hash": "sha256:3a7201ef7cffa4e507ff260342a09fe143fc8ad053b7fdfa88c5aab625ef960b",
+      "bytes": 376193,
+      "fields": 8,
+      "rows": 2863,
       "schema": {
         "fields": [
           {
@@ -256,15 +256,10 @@
             "name": "uo_sigla",
             "type": "string",
             "source": "Unidade Orçamentária - Sigla"
-          },
-          {
-            "name": "ano_uo",
-            "type": "integer",
-            "source": "Ano Exercício Unidade Orçamentária"
           }
         ]
       }
     }
   ],
-  "updated_at": "2024-04-09T09:58:15"
+  "updated_at": "2024-04-09T15:50:39"
 }
