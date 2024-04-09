@@ -9,6 +9,10 @@ fields:
     type: string
     target: fonte_desc
 
+primaryKey:
+  - Ano de Exercício
+  - Fonte Recurso - Código
+
 missingValues:
   - "    " 
   - "   "  

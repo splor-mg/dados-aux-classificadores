@@ -9,6 +9,9 @@ fields:
     type: string
     target: acao_desc
 
+primaryKey:
+  - Ano de Exercício
+  - Projeto_Atividade - Código
 
 missingValues:
   - "    " 

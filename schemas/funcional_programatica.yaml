@@ -30,6 +30,10 @@ fields:
     type: string
     target: acao_desc
 
+primaryKey:
+  - Ano de Exercício
+  - Unidade Orçamentária - Código
+  - Projeto_Atividade - Código
   
 missingValues:
   - "    " 

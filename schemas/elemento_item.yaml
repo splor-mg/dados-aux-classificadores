@@ -9,6 +9,10 @@ fields:
     type: string
     target: elemento_item_desc
 
+primaryKey:
+  - Ano de Exercício
+  - Elemento Item Despesa - Código
+
 missingValues:
   - "    " 
   - "   "  

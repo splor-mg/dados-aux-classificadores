@@ -9,6 +9,9 @@ fields:
     type: string
     target: rec_desc
 
+primaryKey:
+  - Ano de Exercício
+  - Classificação Receita - Código
 
 missingValues:
   - "    " 

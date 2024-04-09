@@ -27,6 +27,9 @@ fields:
     type: integer
     target: ano_uo
 
+primaryKey:
+  - Ano de Exercício
+  - Unidade Orçamentária - Código
 
 missingValues:
   - "    " 
