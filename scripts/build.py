@@ -13,7 +13,7 @@ def build_package(descriptor: str = 'datapackage.yaml'):
             {
             "profile": "tabular-data-resource",
             "name": resource_name,
-            "path": f'data/{resource_name}.csv.gz',
+            "path": f'data/{resource_name}.csv',
             "format": "csv",
             "encoding": "utf-8",
             "schema": {"fields": [

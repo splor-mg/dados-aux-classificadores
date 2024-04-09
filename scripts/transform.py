@@ -17,4 +17,4 @@ def transform_resource(resource_name: str, source_descriptor: str = 'datapackage
         target = field.custom.get('target')
         target = target if target else as_identifier(field.name)
         table = etl.rename(table, field.name, target)
-    etl.tocsv(table, f'data/{resource.name}.csv.gz', encoding='utf-8')
+    etl.tocsv(table, f'data/{resource.name}.csv', encoding='utf-8')
