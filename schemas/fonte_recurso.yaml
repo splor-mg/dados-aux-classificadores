@@ -1,23 +1,13 @@
 fields:
-  - name: Ano de Exercício
+  - name: ano
     type: integer
-    target: ano
-  - name: Fonte Recurso - Código
+
+  - name: fonte_cod
     type: integer
-    target: fonte_cod
-  - name: Fonte Recurso - Descrição
+    
+  - name: fonte_desc
     type: string
-    target: fonte_desc
 
 primaryKey:
-  - Ano de Exercício
-  - Fonte Recurso - Código
-
-missingValues:
-  - "    " 
-  - "   "  
-  - " -   "
-  - "-   "
-  - " "
-  - ""
-  - " - "
+  - ano
+  - fonte_cod

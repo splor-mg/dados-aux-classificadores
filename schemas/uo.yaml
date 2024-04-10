@@ -1,38 +1,28 @@
 fields:
-  - name: Ano de Exercício
+  - name: ano
     type: integer
-    target: ano
-  - name: Órgão Vinculação Orçam - Código
+
+  - name: orgao_vinculacao_cod
     type: integer
-    target: orgao_vinculacao_cod
-  - name: Órgão Vinculação Orçam - Nome
+
+  - name: orgao_vinculacao_nome
     type: string
-    target: orgao_vinculacao_nome
-  - name: Poder Unid Orçamentária - Código
+
+  - name: poder_cod
     type: integer
-    target: poder_cod
-  - name: Poder Unid Orçamentária - Descrição
+
+  - name: poder_desc
     type: string
-    target: poder_desc
-  - name: Unidade Orçamentária - Código
+
+  - name: uo_cod
     type: integer
-    target: uo_cod
-  - name: Unidade Orçamentária - Nome
+
+  - name: uo_nome
     type: string
-    target: uo_nome
-  - name: Unidade Orçamentária - Sigla
+
+  - name: uo_sigla
     type: string
-    target: uo_sigla
 
 primaryKey:
-  - Ano de Exercício
-  - Unidade Orçamentária - Código
-
-missingValues:
-  - "    " 
-  - "   "  
-  - " -   "
-  - "-   "
-  - " "
-  - ""
-  - " - "
+  - ano
+  - uo_cod

@@ -8,7 +8,7 @@ resources:
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/acao.yaml
+    schema: schemas/raw/acao.yaml
 
   - name: elemento_item
     type: table
@@ -18,7 +18,7 @@ resources:
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/elemento_item.yaml
+    schema: schemas/raw/elemento_item.yaml
 
   - name: fonte_recurso
     type: table
@@ -28,7 +28,7 @@ resources:
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/fonte_recurso.yaml
+    schema: schemas/raw/fonte_recurso.yaml
 
   - name: funcional_programatica
     type: table
@@ -38,7 +38,7 @@ resources:
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/funcional_programatica.yaml
+    schema: schemas/raw/funcional_programatica.yaml
 
   - name: natureza_receita
     type: table
@@ -48,7 +48,7 @@ resources:
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/natureza_receita.yaml
+    schema: schemas/raw/natureza_receita.yaml
 
   - name: uo
     type: table
@@ -58,4 +58,4 @@ resources:
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/uo.yaml
+    schema: schemas/raw/uo.yaml

@@ -1,23 +1,13 @@
 fields:
-  - name: Ano de Exercício
+  - name: ano
     type: integer
-    target: ano
-  - name: Classificação Receita - Código
+
+  - name: rec_cod
     type: integer
-    target: rec_cod
-  - name: Classificação Receita - Descrição
+
+  - name: rec_desc
     type: string
-    target: rec_desc
 
 primaryKey:
-  - Ano de Exercício
-  - Classificação Receita - Código
-
-missingValues:
-  - "    " 
-  - "   "  
-  - " -   "
-  - "-   "
-  - " "
-  - ""
-  - " - "
+  - ano
+  - rec_cod

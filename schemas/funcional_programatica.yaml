@@ -1,45 +1,35 @@
 fields:
-  - name: Ano de Exercício
+  - name: ano
     type: integer
-    target: ano
-  - name: Unidade Orçamentária - Código
+
+  - name: uo_cod
     type: integer
-    target: uo_cod
-  - name: Função - Código
+
+  - name: funcao_cod
     type: integer
-    target: funcao_cod
-  - name: Função - Descrição
+
+  - name: funcao_desc
     type: string
-    target: funcao_desc
-  - name: Subfunção - Código
+
+  - name: subfuncao_cod
     type: integer
-    target: subfuncao_cod
-  - name: Subfunção - Descrição
+
+  - name: subfuncao_desc
     type: string
-    target: subfuncao_desc
-  - name: Programa - Código
+
+  - name: programa_cod
     type: integer
-    target: programa_cod
-  - name: Programa - Descrição
+
+  - name: programa_desc
     type: string
-    target: programa_desc
-  - name: Projeto_Atividade - Código
+
+  - name: acao_cod
     type: integer
-    target: acao_cod
-  - name: Projeto_Atividade - Descrição
+
+  - name: acao_desc
     type: string
-    target: acao_desc
 
 primaryKey:
-  - Ano de Exercício
-  - Unidade Orçamentária - Código
-  - Projeto_Atividade - Código
-  
-missingValues:
-  - "    " 
-  - "   "  
-  - " -   "
-  - "-   "
-  - " "
-  - ""
-  - " - "
+  - ano
+  - uo_cod
+  - acao_cod

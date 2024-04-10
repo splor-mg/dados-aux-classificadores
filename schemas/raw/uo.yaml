@@ -1,0 +1,32 @@
+fields:
+  - name: Ano de Exercício
+    type: integer
+    target: ano
+
+  - name: Órgão Vinculação Orçam - Código
+    type: integer
+    target: orgao_vinculacao_cod
+
+  - name: Órgão Vinculação Orçam - Nome
+    type: string
+    target: orgao_vinculacao_nome
+
+  - name: Poder Unid Orçamentária - Código
+    type: integer
+    target: poder_cod
+
+  - name: Poder Unid Orçamentária - Descrição
+    type: string
+    target: poder_desc
+
+  - name: Unidade Orçamentária - Código
+    type: integer
+    target: uo_cod
+
+  - name: Unidade Orçamentária - Nome
+    type: string
+    target: uo_nome
+
+  - name: Unidade Orçamentária - Sigla
+    type: string
+    target: uo_sigla

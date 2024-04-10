@@ -1,23 +1,13 @@
 fields:
-  - name: Ano de Exercício
+  - name: ano
     type: integer
-    target: ano
-  - name: Projeto_Atividade - Código
+
+  - name: acao_cod
     type: integer
-    target: acao_cod
-  - name: Projeto_Atividade - Descrição
+
+  - name: acao_desc
     type: string
-    target: acao_desc
 
 primaryKey:
-  - Ano de Exercício
-  - Projeto_Atividade - Código
-
-missingValues:
-  - "    " 
-  - "   "  
-  - " -   "
-  - "-   "
-  - " "
-  - ""
-  - " - "
+  - ano
+  - acao_cod

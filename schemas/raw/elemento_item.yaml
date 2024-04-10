@@ -1,0 +1,12 @@
+fields:
+  - name: Ano de Exercício
+    type: integer
+    target: ano
+
+  - name: Elemento Item Despesa - Código
+    type: integer
+    target: elemento_item_cod
+
+  - name: Elemento Item Despesa - Descrição
+    type: string
+    target: elemento_item_desc 
