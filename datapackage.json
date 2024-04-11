@@ -19,19 +19,20 @@
         "fields": [
           {
             "name": "ano",
-            "type": "integer",
-            "source": "Ano de Exercício"
+            "type": "integer"
           },
           {
             "name": "acao_cod",
-            "type": "integer",
-            "source": "Projeto_Atividade - Código"
+            "type": "integer"
           },
           {
             "name": "acao_desc",
-            "type": "string",
-            "source": "Projeto_Atividade - Descrição"
+            "type": "string"
           }
+        ],
+        "primaryKey": [
+          "ano",
+          "acao_cod"
         ]
       }
     },
@@ -52,19 +53,20 @@
         "fields": [
           {
             "name": "ano",
-            "type": "integer",
-            "source": "Ano de Exercício"
+            "type": "integer"
           },
           {
             "name": "elemento_item_cod",
-            "type": "integer",
-            "source": "Elemento Item Despesa - Código"
+            "type": "integer"
           },
           {
             "name": "elemento_item_desc",
-            "type": "string",
-            "source": "Elemento Item Despesa - Descrição"
+            "type": "string"
           }
+        ],
+        "primaryKey": [
+          "ano",
+          "elemento_item_cod"
         ]
       }
     },
@@ -85,19 +87,20 @@
         "fields": [
           {
             "name": "ano",
-            "type": "integer",
-            "source": "Ano de Exercício"
+            "type": "integer"
           },
           {
             "name": "fonte_cod",
-            "type": "integer",
-            "source": "Fonte Recurso - Código"
+            "type": "integer"
           },
           {
             "name": "fonte_desc",
-            "type": "string",
-            "source": "Fonte Recurso - Descrição"
+            "type": "string"
           }
+        ],
+        "primaryKey": [
+          "ano",
+          "fonte_cod"
         ]
       }
     },
@@ -118,54 +121,49 @@
         "fields": [
           {
             "name": "ano",
-            "type": "integer",
-            "source": "Ano de Exercício"
+            "type": "integer"
           },
           {
             "name": "uo_cod",
-            "type": "integer",
-            "source": "Unidade Orçamentária - Código"
+            "type": "integer"
           },
           {
             "name": "funcao_cod",
-            "type": "integer",
-            "source": "Função - Código"
+            "type": "integer"
           },
           {
             "name": "funcao_desc",
-            "type": "string",
-            "source": "Função - Descrição"
+            "type": "string"
           },
           {
             "name": "subfuncao_cod",
-            "type": "integer",
-            "source": "Subfunção - Código"
+            "type": "integer"
           },
           {
             "name": "subfuncao_desc",
-            "type": "string",
-            "source": "Subfunção - Descrição"
+            "type": "string"
           },
           {
             "name": "programa_cod",
-            "type": "integer",
-            "source": "Programa - Código"
+            "type": "integer"
           },
           {
             "name": "programa_desc",
-            "type": "string",
-            "source": "Programa - Descrição"
+            "type": "string"
           },
           {
             "name": "acao_cod",
-            "type": "integer",
-            "source": "Projeto_Atividade - Código"
+            "type": "integer"
           },
           {
             "name": "acao_desc",
-            "type": "string",
-            "source": "Projeto_Atividade - Descrição"
+            "type": "string"
           }
+        ],
+        "primaryKey": [
+          "ano",
+          "uo_cod",
+          "acao_cod"
         ]
       }
     },
@@ -186,19 +184,20 @@
         "fields": [
           {
             "name": "ano",
-            "type": "integer",
-            "source": "Ano de Exercício"
+            "type": "integer"
           },
           {
             "name": "rec_cod",
-            "type": "integer",
-            "source": "Classificação Receita - Código"
+            "type": "integer"
           },
           {
             "name": "rec_desc",
-            "type": "string",
-            "source": "Classificação Receita - Descrição"
+            "type": "string"
           }
+        ],
+        "primaryKey": [
+          "ano",
+          "rec_cod"
         ]
       }
     },
@@ -219,47 +218,43 @@
         "fields": [
           {
             "name": "ano",
-            "type": "integer",
-            "source": "Ano de Exercício"
+            "type": "integer"
           },
           {
             "name": "orgao_vinculacao_cod",
-            "type": "integer",
-            "source": "Órgão Vinculação Orçam - Código"
+            "type": "integer"
           },
           {
             "name": "orgao_vinculacao_nome",
-            "type": "string",
-            "source": "Órgão Vinculação Orçam - Nome"
+            "type": "string"
           },
           {
             "name": "poder_cod",
-            "type": "integer",
-            "source": "Poder Unid Orçamentária - Código"
+            "type": "integer"
           },
           {
             "name": "poder_desc",
-            "type": "string",
-            "source": "Poder Unid Orçamentária - Descrição"
+            "type": "string"
           },
           {
             "name": "uo_cod",
-            "type": "integer",
-            "source": "Unidade Orçamentária - Código"
+            "type": "integer"
           },
           {
             "name": "uo_nome",
-            "type": "string",
-            "source": "Unidade Orçamentária - Nome"
+            "type": "string"
           },
           {
             "name": "uo_sigla",
-            "type": "string",
-            "source": "Unidade Orçamentária - Sigla"
+            "type": "string"
           }
+        ],
+        "primaryKey": [
+          "ano",
+          "uo_cod"
         ]
       }
     }
   ],
-  "updated_at": "2024-04-09T15:50:39"
+  "updated_at": "2024-04-11T15:16:26"
 }

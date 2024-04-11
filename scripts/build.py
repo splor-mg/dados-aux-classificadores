@@ -26,6 +26,7 @@ def build_package(descriptor: str = 'datapackage.yaml'):
     
     for resource in target.resources:
         resource.infer(stats=True)
+        resource.dereference()
 
     target.to_json('datapackage.json')
 
