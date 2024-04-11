@@ -1,0 +1,13 @@
+fields:
+  - name: ano
+    type: integer
+
+  - name: fonte_cod
+    type: integer
+    
+  - name: fonte_desc
+    type: string
+
+primaryKey:
+  - ano
+  - fonte_cod

@@ -1,0 +1,35 @@
+fields:
+  - name: ano
+    type: integer
+
+  - name: uo_cod
+    type: integer
+
+  - name: funcao_cod
+    type: integer
+
+  - name: funcao_desc
+    type: string
+
+  - name: subfuncao_cod
+    type: integer
+
+  - name: subfuncao_desc
+    type: string
+
+  - name: programa_cod
+    type: integer
+
+  - name: programa_desc
+    type: string
+
+  - name: acao_cod
+    type: integer
+
+  - name: acao_desc
+    type: string
+
+primaryKey:
+  - ano
+  - uo_cod
+  - acao_cod

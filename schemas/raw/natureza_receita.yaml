@@ -1,0 +1,12 @@
+fields:
+  - name: Ano de Exercício
+    type: integer
+    target: ano
+
+  - name: Classificação Receita - Código
+    type: integer
+    target: rec_cod
+
+  - name: Classificação Receita - Descrição
+    type: string
+    target: rec_desc

@@ -1,45 +1,61 @@
-name: tabela-auxiliar
+name: aux_classificadores
 resources: 
-  - name: tbl-aux-acao-desc
-    title: 'tabela auxiliar ação descrição'
+  - name: acao
     type: table
-    path: ["data-raw/tbl-aux-acao-desc-2024.csv", "data-raw/tbl-aux-acao-desc-2023.csv",
-    "data-raw/tbl-aux-acao-desc-2023.csv", "data-raw/tbl-aux-acao-desc-2022.csv",
-    "data-raw/tbl-aux-acao-desc-2021.csv", "data-raw/tbl-aux-acao-desc-2020.csv",
-    "data-raw/tbl-aux-acao-desc-2019.csv", "data-raw/tbl-aux-acao-desc-2018.csv", 
-    "data-raw/tbl-aux-acao-desc-2017.csv"]
+    path: ["data-raw/acao_rp.csv", "data-raw/acao_previous.csv", "data-raw/acao_current.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/tbl-aux-acao-desc.yaml
+    schema: schemas/raw/acao.yaml
 
-  - name: tbl-aux-elemento-item-desc
+  - name: elemento_item
     type: table
-    path: ["data-raw/tbl-aux-elem-item-desc-2024.csv", "data-raw/tbl-aux-elem-item-desc-2023.csv",
-    "data-raw/tbl-aux-elem-item-desc-2023.csv", "data-raw/tbl-aux-elem-item-desc-2022.csv",
-    "data-raw/tbl-aux-elem-item-desc-2021.csv", "data-raw/tbl-aux-elem-item-desc-2020.csv",
-    "data-raw/tbl-aux-elem-item-desc-2019.csv", "data-raw/tbl-aux-elem-item-desc-2018.csv", 
-    "data-raw/tbl-aux-elem-item-desc-2017.csv"]
+    path: ["data-raw/elemento_item_rp.csv", "data-raw/elemento_item_previous.csv", "data-raw/elemento_item_current.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/tbl-aux-elemento-item-desc.yaml
+    schema: schemas/raw/elemento_item.yaml
 
-
-  - name: tbl-aux-uo-sigla
+  - name: fonte_recurso
     type: table
-    path: ["data-raw/tbl-aux-uo-sigla-2024.csv", "data-raw/tbl-aux-uo-sigla-2023.csv",
-    "data-raw/tbl-aux-uo-sigla-2023.csv", "data-raw/tbl-aux-uo-sigla-2022.csv",
-    "data-raw/tbl-aux-uo-sigla-2021.csv", "data-raw/tbl-aux-uo-sigla-2020.csv",
-    "data-raw/tbl-aux-uo-sigla-2019.csv", "data-raw/tbl-aux-uo-sigla-2018.csv", 
-    "data-raw/tbl-aux-uo-sigla-2017.csv"]
+    path: ["data-raw/fonte_recurso_rp.csv", "data-raw/fonte_recurso_previous.csv", "data-raw/fonte_recurso_current.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/tbl-aux-uo-sigla.yaml
+    schema: schemas/raw/fonte_recurso.yaml
+
+  - name: funcional_programatica
+    type: table
+    path: ["data-raw/funcional_programatica_rp.csv", "data-raw/funcional_programatica_previous.csv", "data-raw/funcional_programatica_current.csv"]
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    dialect: dialect.yaml
+    schema: schemas/raw/funcional_programatica.yaml
+
+  - name: natureza_receita
+    type: table
+    path: ["data-raw/natureza_receita_previous.csv", "data-raw/natureza_receita_current.csv"]
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    dialect: dialect.yaml
+    schema: schemas/raw/natureza_receita.yaml
+
+  - name: uo
+    type: table
+    path: ["data-raw/uo_rp.csv", "data-raw/uo_previous.csv", "data-raw/uo_current.csv"]
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    dialect: dialect.yaml
+    schema: schemas/raw/uo.yaml

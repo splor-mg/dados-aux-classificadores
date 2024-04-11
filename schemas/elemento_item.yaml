@@ -1,0 +1,14 @@
+fields:
+  - name: ano
+    type: integer
+
+  - name: elemento_item_cod
+    type: integer
+
+  - name: elemento_item_desc
+    type: string
+
+primaryKey:
+  - ano
+  - elemento_item_cod
+ 

@@ -1,0 +1,12 @@
+fields:
+  - name: Ano de Exercício
+    type: integer
+    target: ano
+
+  - name: Projeto_Atividade - Código
+    type: integer
+    target: acao_cod
+
+  - name: Projeto_Atividade - Descrição
+    type: string
+    target: acao_desc

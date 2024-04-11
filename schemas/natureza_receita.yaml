@@ -1,0 +1,13 @@
+fields:
+  - name: ano
+    type: integer
+
+  - name: rec_cod
+    type: integer
+
+  - name: rec_desc
+    type: string
+
+primaryKey:
+  - ano
+  - rec_cod

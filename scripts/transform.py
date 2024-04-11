@@ -17,4 +17,14 @@ def transform_resource(resource_name: str, source_descriptor: str = 'datapackage
         target = field.custom.get('target')
         target = target if target else as_identifier(field.name)
         table = etl.rename(table, field.name, target)
-    etl.tocsv(table, f'data/{resource.name}.csv.gz', encoding='utf-8')
+        table = etl.select(table, "ano", lambda v: v >= 2008)
+
+    if resource_name == "elemento_item":
+        table = etl.selectnotnone(table, "elemento_item_desc")
+
+    if resource_name == "funcional_programatica":
+        table = etl.select(
+            table, lambda row: row.ano == 2023 and row.uo_cod == 1401 and row.funcao_cod == 12 and row.acao_cod == 4302, complement = True
+        )
+
+    etl.tocsv(table, f'data/{resource.name}.csv', encoding='utf-8')

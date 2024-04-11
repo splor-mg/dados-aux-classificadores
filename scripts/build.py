@@ -16,13 +16,7 @@ def build_package(descriptor: str = 'datapackage.yaml'):
             "path": f'data/{resource_name}.csv',
             "format": "csv",
             "encoding": "utf-8",
-            "schema": {"fields": [
-                {
-                'name': field.custom['target'] if field.custom.get('target') else as_identifier(field.name),
-                'type': field.type,
-                'source': field.name,
-                } for field in source.get_resource(resource_name).schema.fields                
-            ]}
+            "schema": f"schemas/{resource_name}.yaml"
             } for resource_name in source.resource_names
         ]
     }
@@ -32,6 +26,7 @@ def build_package(descriptor: str = 'datapackage.yaml'):
     
     for resource in target.resources:
         resource.infer(stats=True)
+        resource.dereference()
 
     target.to_json('datapackage.json')
 

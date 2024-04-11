@@ -1,0 +1,260 @@
+{
+  "name": "aux_classificadores",
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "acao",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/acao.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:b118257f4eb00c2f4486f4a898e37396152fad94bddde145a46b0fc6d0415caa",
+      "bytes": 932474,
+      "fields": 3,
+      "rows": 14749,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer"
+          },
+          {
+            "name": "acao_cod",
+            "type": "integer"
+          },
+          {
+            "name": "acao_desc",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "ano",
+          "acao_cod"
+        ]
+      }
+    },
+    {
+      "name": "elemento_item",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/elemento_item.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:e83eac9b45e8c1bc2543a31b71ee12eca33c54d2154d090fcae9ae62b53132fc",
+      "bytes": 343623,
+      "fields": 3,
+      "rows": 7080,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer"
+          },
+          {
+            "name": "elemento_item_cod",
+            "type": "integer"
+          },
+          {
+            "name": "elemento_item_desc",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "ano",
+          "elemento_item_cod"
+        ]
+      }
+    },
+    {
+      "name": "fonte_recurso",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/fonte_recurso.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:24b663c942e4c2708948429206cf5d713657952cf01748b46c2e54ce50e77fe4",
+      "bytes": 51153,
+      "fields": 3,
+      "rows": 843,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer"
+          },
+          {
+            "name": "fonte_cod",
+            "type": "integer"
+          },
+          {
+            "name": "fonte_desc",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "ano",
+          "fonte_cod"
+        ]
+      }
+    },
+    {
+      "name": "funcional_programatica",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/funcional_programatica.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:9d9cf4e618f3b3006ad41354e0cc59578ccd92cf090f8d7032f50e280b74f4f1",
+      "bytes": 4046678,
+      "fields": 10,
+      "rows": 18842,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer"
+          },
+          {
+            "name": "uo_cod",
+            "type": "integer"
+          },
+          {
+            "name": "funcao_cod",
+            "type": "integer"
+          },
+          {
+            "name": "funcao_desc",
+            "type": "string"
+          },
+          {
+            "name": "subfuncao_cod",
+            "type": "integer"
+          },
+          {
+            "name": "subfuncao_desc",
+            "type": "string"
+          },
+          {
+            "name": "programa_cod",
+            "type": "integer"
+          },
+          {
+            "name": "programa_desc",
+            "type": "string"
+          },
+          {
+            "name": "acao_cod",
+            "type": "integer"
+          },
+          {
+            "name": "acao_desc",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "ano",
+          "uo_cod",
+          "acao_cod"
+        ]
+      }
+    },
+    {
+      "name": "natureza_receita",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/natureza_receita.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:a9a2cb9b6f8264ba02ea5bc647fdc9fc2d7b4298e5b6299334c2c60677067ab7",
+      "bytes": 952113,
+      "fields": 3,
+      "rows": 9837,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer"
+          },
+          {
+            "name": "rec_cod",
+            "type": "integer"
+          },
+          {
+            "name": "rec_desc",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "ano",
+          "rec_cod"
+        ]
+      }
+    },
+    {
+      "name": "uo",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/uo.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:dd8b9ddd7c8c744b855427b72734de45a5368728bdb1736c902cd26ad4d97a7f",
+      "bytes": 236951,
+      "fields": 8,
+      "rows": 1791,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer"
+          },
+          {
+            "name": "orgao_vinculacao_cod",
+            "type": "integer"
+          },
+          {
+            "name": "orgao_vinculacao_nome",
+            "type": "string"
+          },
+          {
+            "name": "poder_cod",
+            "type": "integer"
+          },
+          {
+            "name": "poder_desc",
+            "type": "string"
+          },
+          {
+            "name": "uo_cod",
+            "type": "integer"
+          },
+          {
+            "name": "uo_nome",
+            "type": "string"
+          },
+          {
+            "name": "uo_sigla",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "ano",
+          "uo_cod"
+        ]
+      }
+    }
+  ],
+  "updated_at": "2024-04-11T17:24:01"
+}

@@ -1,0 +1,28 @@
+fields:
+  - name: ano
+    type: integer
+
+  - name: orgao_vinculacao_cod
+    type: integer
+
+  - name: orgao_vinculacao_nome
+    type: string
+
+  - name: poder_cod
+    type: integer
+
+  - name: poder_desc
+    type: string
+
+  - name: uo_cod
+    type: integer
+
+  - name: uo_nome
+    type: string
+
+  - name: uo_sigla
+    type: string
+
+primaryKey:
+  - ano
+  - uo_cod

@@ -1,0 +1,13 @@
+fields:
+  - name: ano
+    type: integer
+
+  - name: acao_cod
+    type: integer
+
+  - name: acao_desc
+    type: string
+
+primaryKey:
+  - ano
+  - acao_cod
