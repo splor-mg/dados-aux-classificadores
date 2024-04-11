@@ -14,7 +14,10 @@ def transform_resource(resource_name: str, source_descriptor: str = 'datapackage
     resource.transform(transform_pipeline)
     table = resource.to_petl()
     for field in resource.schema.fields:
+        if resource_name == "elemento_item":
+            table = etl.selectnotnone(table, "Elemento Item Despesa - Descrição")
         target = field.custom.get('target')
         target = target if target else as_identifier(field.name)
         table = etl.rename(table, field.name, target)
+        table = etl.select(table, "ano", lambda v: v >= 2008)
     etl.tocsv(table, f'data/{resource.name}.csv', encoding='utf-8')
