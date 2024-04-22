@@ -1,8 +1,10 @@
 .PHONY: requirements all extract validate transform build check publish clean variables
 
+include config.mk
+
 EXT = csv
 
-RESOURCE_NAMES := $(shell python main.py resources)
+RESOURCE_NAMES := $(shell $(PYTHON) main.py resources)
 OUTPUT_FILES := $(addsuffix .csv,$(addprefix data/,$(RESOURCE_NAMES)))
 
 all: extract validate transform build check
@@ -16,12 +18,12 @@ validate:
 transform: $(OUTPUT_FILES)
 
 $(OUTPUT_FILES): data/%.csv: data-raw/*.$(EXT) schemas/%.yaml scripts/transform.py datapackage.yaml
-	python main.py transform $*
+	$(PYTHON) main.py transform $*
 
 build: transform datapackage.json
 
 datapackage.json: $(OUTPUT_FILES) scripts/build.py datapackage.yaml
-	python main.py build
+	$(PYTHON) main.py build
 
 check:
 	frictionless validate datapackage.json
