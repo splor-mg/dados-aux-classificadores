@@ -4,8 +4,6 @@ import petl as etl
 from dpm.utils import as_identifier
 from scripts.pipelines import transform_pipeline
 
-missing_elemento_item = etl.fromcsv('no_match_elemento_item.csv')
-
 logger = logging.getLogger(__name__)
 
 def transform_resource(resource_name: str, source_descriptor: str = 'datapackage.yaml'):
@@ -22,9 +20,8 @@ def transform_resource(resource_name: str, source_descriptor: str = 'datapackage
         table = etl.select(table, "ano", lambda v: v >= 2008)
 
     if resource_name == "elemento_item":
-       
+     
         table = etl.selectnotnone(table, "elemento_item_desc")
-        table = etl.cat(table, missing_elemento_item)
         table = etl.distinct(table)
 
     if resource_name == "funcional_programatica":

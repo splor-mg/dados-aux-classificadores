@@ -12,7 +12,7 @@ resources:
 
   - name: elemento_item
     type: table
-    path: ["data-raw/elemento_item_rp.csv", "data-raw/elemento_item_previous.csv", "data-raw/elemento_item_current.csv"]
+    path: ["data-raw/elemento_item_rp.csv", "data-raw/elemento_item_previous.csv", "data-raw/elemento_item_current.csv", "elemento_item_no_match.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
