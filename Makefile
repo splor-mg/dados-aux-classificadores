@@ -15,7 +15,7 @@ extract:
 validate:
 	frictionless validate datapackage.yaml
 
-transform: $(OUTPUT_FILES)
+transform: $(OUTPUT_FILES) 
 
 $(OUTPUT_FILES): data/%.csv: data-raw/*.$(EXT) schemas/%.yaml scripts/transform.py datapackage.yaml
 	$(PYTHON) main.py transform $*

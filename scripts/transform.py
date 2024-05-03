@@ -20,7 +20,9 @@ def transform_resource(resource_name: str, source_descriptor: str = 'datapackage
         table = etl.select(table, "ano", lambda v: v >= 2008)
 
     if resource_name == "elemento_item":
+     
         table = etl.selectnotnone(table, "elemento_item_desc")
+        table = etl.distinct(table)
 
     if resource_name == "funcional_programatica":
         table = etl.select(
