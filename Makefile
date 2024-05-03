@@ -17,7 +17,7 @@ validate:
 
 transform: $(OUTPUT_FILES) 
 
-$(OUTPUT_FILES): data/%.csv: data-raw/*.$(EXT) schemas/%.yaml scripts/transform.py datapackage.yaml elemento_item_no_match.csv
+$(OUTPUT_FILES): data/%.csv: data-raw/*.$(EXT) schemas/%.yaml scripts/transform.py datapackage.yaml
 	$(PYTHON) main.py transform $*
 
 build: transform datapackage.json
