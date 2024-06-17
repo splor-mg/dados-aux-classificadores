@@ -45,10 +45,10 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:0aba164f593ba0a5645f77616944db035f6abbb569eeef5d76c919c269389d3b",
-      "bytes": 345289,
+      "hash": "sha256:34f1b8edac31800e6d5edabfb5605afeb4d90b1397849940971bd6802757c7f5",
+      "bytes": 345413,
       "fields": 3,
-      "rows": 7111,
+      "rows": 7113,
       "schema": {
         "fields": [
           {
@@ -256,5 +256,5 @@
       }
     }
   ],
-  "updated_at": "2024-06-14T09:35:51"
+  "updated_at": "2024-06-17T09:36:07"
 }
