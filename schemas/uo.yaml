@@ -23,6 +23,9 @@ fields:
   - name: uo_sigla
     type: string
 
+  - name: chave_uo
+    type: string
+
 primaryKey:
   - ano
   - uo_cod

@@ -8,6 +8,9 @@ fields:
   - name: acao_desc
     type: string
 
+  - name: chave_acao
+    type: string
+
 primaryKey:
   - ano
   - acao_cod

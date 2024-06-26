@@ -29,6 +29,9 @@ fields:
   - name: acao_desc
     type: string
 
+  - name: chave_funcional_programatica
+    type: string
+
 primaryKey:
   - ano
   - uo_cod

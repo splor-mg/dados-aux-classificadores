@@ -1,4 +1,4 @@
-from frictionless import Package, Schema
+from frictionless import Package, Schema, fields
 import logging
 import petl as etl
 from dpm.utils import as_identifier
@@ -12,7 +12,7 @@ def transform_resource(resource_name: str, source_descriptor: str = 'datapackage
     package = Package(source_descriptor)
     resource = package.get_resource(resource_name)
 
-    schema = Schema(f'schemas/{resource.name}.yaml')
+    schema = Schema.from_descriptor(f'schemas/{resource.name}.yaml')
 
     resource.transform(transform_pipeline)
     table = resource.to_petl()
@@ -36,4 +36,3 @@ def transform_resource(resource_name: str, source_descriptor: str = 'datapackage
     table = etl.cut(table, f'chave_{resource.name}',  *[field for field in table.header() if field != f'chave_{resource.name}'])
 
     etl.tocsv(table, f'data/{resource.name}.csv', encoding='utf-8')
-

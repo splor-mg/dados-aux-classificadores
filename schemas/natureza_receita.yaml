@@ -8,6 +8,9 @@ fields:
   - name: rec_desc
     type: string
 
+  - name: chave_natureza_receita
+    type: string
+
 primaryKey:
   - ano
   - rec_cod
