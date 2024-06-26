@@ -8,6 +8,9 @@ fields:
   - name: elemento_item_desc
     type: string
 
+  - name: chave_elemento_item
+    type: string
+
 primaryKey:
   - ano
   - elemento_item_cod
