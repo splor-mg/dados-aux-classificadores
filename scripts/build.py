@@ -2,6 +2,7 @@ from frictionless import Package, Resource
 from datetime import datetime
 from dpm.utils import as_identifier
 
+
 def build_package(descriptor: str = 'datapackage.yaml'):
     
     source = Package(descriptor)
@@ -32,3 +33,4 @@ def build_package(descriptor: str = 'datapackage.yaml'):
 
 
 
+build_package()
