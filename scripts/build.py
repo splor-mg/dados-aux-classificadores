@@ -30,7 +30,3 @@ def build_package(descriptor: str = 'datapackage.yaml'):
         resource.dereference()
 
     target.to_json('datapackage.json')
-
-
-
-build_package()
