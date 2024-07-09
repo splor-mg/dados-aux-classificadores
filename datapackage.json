@@ -11,12 +11,21 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:b118257f4eb00c2f4486f4a898e37396152fad94bddde145a46b0fc6d0415caa",
-      "bytes": 932474,
-      "fields": 3,
+      "hash": "sha256:fa26db43959cb67dde6b037a25dd857ea677697e1f2a3c363795f77bcfb0970a",
+      "bytes": 1079975,
+      "fields": 4,
       "rows": 14749,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
       "schema": {
         "fields": [
+          {
+            "name": "chave_acao",
+            "type": "string"
+          },
           {
             "name": "ano",
             "type": "integer"
@@ -45,12 +54,21 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:cf1d0766d59fd02512f645da7376d1c19cce19b8c3d352ea8a11390134bff168",
-      "bytes": 345601,
-      "fields": 3,
-      "rows": 7116,
+      "hash": "sha256:f9d2efaafe18762ec9c5e52c0c536148f105767a0eeb3635c7e9977e8442d153",
+      "bytes": 415214,
+      "fields": 4,
+      "rows": 7118,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
       "schema": {
         "fields": [
+          {
+            "name": "chave_elemento_item",
+            "type": "string"
+          },
           {
             "name": "ano",
             "type": "integer"
@@ -79,12 +97,21 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:24b663c942e4c2708948429206cf5d713657952cf01748b46c2e54ce50e77fe4",
-      "bytes": 51153,
-      "fields": 3,
+      "hash": "sha256:47ae18fb2cb9a399c9f39d775b8fa917e57177083bef1aaafafa0b99b51f0a38",
+      "bytes": 57904,
+      "fields": 4,
       "rows": 843,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
       "schema": {
         "fields": [
+          {
+            "name": "chave_fonte_recurso",
+            "type": "string"
+          },
           {
             "name": "ano",
             "type": "integer"
@@ -113,12 +140,21 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:9d9cf4e618f3b3006ad41354e0cc59578ccd92cf090f8d7032f50e280b74f4f1",
-      "bytes": 4046678,
-      "fields": 10,
+      "hash": "sha256:3411b8f0aaa4edad63bbc424eb723b47eaa169969c0921355a636be1f5be1692",
+      "bytes": 4329337,
+      "fields": 11,
       "rows": 18842,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
       "schema": {
         "fields": [
+          {
+            "name": "chave_funcional_programatica",
+            "type": "string"
+          },
           {
             "name": "ano",
             "type": "integer"
@@ -176,12 +212,21 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:f2b5d894a8a62abc8e5541c86ccc81c3a6d841aaa64659882f5460d41ea9468e",
-      "bytes": 811614,
-      "fields": 3,
-      "rows": 8657,
+      "hash": "sha256:c9e257d97ceb9ea03df39be6230773ab137a5fe3e82ca515c5445770b7320efa",
+      "bytes": 959888,
+      "fields": 4,
+      "rows": 8664,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
       "schema": {
         "fields": [
+          {
+            "name": "chave_natureza_receita",
+            "type": "string"
+          },
           {
             "name": "ano",
             "type": "integer"
@@ -210,12 +255,21 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:dd8b9ddd7c8c744b855427b72734de45a5368728bdb1736c902cd26ad4d97a7f",
-      "bytes": 236951,
-      "fields": 8,
+      "hash": "sha256:dd0695ef245995bc1077874a6fc36a699a87b551827a6f2254a63cd70270247b",
+      "bytes": 254870,
+      "fields": 9,
       "rows": 1791,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
       "schema": {
         "fields": [
+          {
+            "name": "chave_uo",
+            "type": "string"
+          },
           {
             "name": "ano",
             "type": "integer"
@@ -256,5 +310,5 @@
       }
     }
   ],
-  "updated_at": "2024-07-09T09:37:18"
+  "updated_at": "2024-07-09T18:32:22"
 }
