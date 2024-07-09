@@ -1,4 +1,7 @@
 fields:
+  - name: chave_funcional_programatica
+    type: string
+
   - name: ano
     type: integer
 
@@ -27,9 +30,6 @@ fields:
     type: integer
 
   - name: acao_desc
-    type: string
-
-  - name: chave_funcional_programatica
     type: string
 
 primaryKey:

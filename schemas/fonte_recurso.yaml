@@ -1,4 +1,7 @@
 fields:
+  - name: chave_fonte_recurso
+    type: string
+
   - name: ano
     type: integer
 
@@ -6,9 +9,6 @@ fields:
     type: integer
     
   - name: fonte_desc
-    type: string
-
-  - name: chave_fonte_recurso
     type: string
 
 primaryKey:

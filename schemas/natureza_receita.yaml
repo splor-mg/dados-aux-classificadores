@@ -1,4 +1,7 @@
 fields:
+  - name: chave_natureza_receita
+    type: string
+
   - name: ano
     type: integer
 
@@ -6,9 +9,6 @@ fields:
     type: integer
 
   - name: rec_desc
-    type: string
-
-  - name: chave_natureza_receita
     type: string
 
 primaryKey:

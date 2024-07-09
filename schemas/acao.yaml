@@ -1,4 +1,7 @@
 fields:
+  - name: chave_acao
+    type: string
+
   - name: ano
     type: integer
 
@@ -6,9 +9,6 @@ fields:
     type: integer
 
   - name: acao_desc
-    type: string
-
-  - name: chave_acao
     type: string
 
 primaryKey:

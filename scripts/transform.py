@@ -32,6 +32,6 @@ def transform_resource(resource_name: str, source_descriptor: str = 'datapackage
             table, lambda row: row.ano == 2023 and row.uo_cod == 1401 and row.funcao_cod == 12 and row.acao_cod == 4302, complement = True
         )
 
-    table = etl.addfield(table, f'chave_{resource.name}', lambda row: '|'.join(str(row[key]) for key in schema.primary_key))
+    table = etl.addfield(table, f'chave_{resource.name}', lambda row: '|'.join(str(row[key]) for key in schema.primary_key), index=0)
 
     etl.tocsv(table, f'data/{resource.name}.csv', encoding='utf-8')

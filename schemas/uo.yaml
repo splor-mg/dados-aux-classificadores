@@ -1,4 +1,7 @@
 fields:
+  - name: chave_uo
+    type: string
+
   - name: ano
     type: integer
 
@@ -21,9 +24,6 @@ fields:
     type: string
 
   - name: uo_sigla
-    type: string
-
-  - name: chave_uo
     type: string
 
 primaryKey:
