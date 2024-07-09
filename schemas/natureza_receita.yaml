@@ -1,4 +1,7 @@
 fields:
+  - name: chave_natureza_receita
+    type: string
+
   - name: ano
     type: integer
 

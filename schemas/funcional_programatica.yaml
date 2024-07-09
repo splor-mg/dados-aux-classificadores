@@ -1,4 +1,7 @@
 fields:
+  - name: chave_funcional_programatica
+    type: string
+
   - name: ano
     type: integer
 

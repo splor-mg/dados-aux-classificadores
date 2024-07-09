@@ -2,6 +2,7 @@ from frictionless import Package, Resource
 from datetime import datetime
 from dpm.utils import as_identifier
 
+
 def build_package(descriptor: str = 'datapackage.yaml'):
     
     source = Package(descriptor)
@@ -15,6 +16,7 @@ def build_package(descriptor: str = 'datapackage.yaml'):
             "name": resource_name,
             "path": f'data/{resource_name}.csv',
             "format": "csv",
+            "dialect": {"delimiter": ","},
             "encoding": "utf-8",
             "schema": f"schemas/{resource_name}.yaml"
             } for resource_name in source.resource_names
@@ -29,6 +31,3 @@ def build_package(descriptor: str = 'datapackage.yaml'):
         resource.dereference()
 
     target.to_json('datapackage.json')
-
-
-

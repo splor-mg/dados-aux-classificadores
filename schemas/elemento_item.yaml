@@ -1,4 +1,7 @@
 fields:
+  - name: chave_elemento_item
+    type: string
+
   - name: ano
     type: integer
 

@@ -1,4 +1,7 @@
 fields:
+  - name: chave_uo
+    type: string
+
   - name: ano
     type: integer
 
