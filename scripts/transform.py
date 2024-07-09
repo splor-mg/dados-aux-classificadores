@@ -33,6 +33,5 @@ def transform_resource(resource_name: str, source_descriptor: str = 'datapackage
         )
 
     table = etl.addfield(table, f'chave_{resource.name}', lambda row: '|'.join(str(row[key]) for key in schema.primary_key))
-    #table = etl.cut(table, f'chave_{resource.name}',  *[field for field in table.header() if field != f'chave_{resource.name}'])
 
     etl.tocsv(table, f'data/{resource.name}.csv', encoding='utf-8')
