@@ -54,10 +54,10 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:0cdb1e3cb32ecef70b784efce845f90b42b3475a4f55aead4af336acacc395dd",
-      "bytes": 415412,
+      "hash": "sha256:a5b311dc0ec7035e55766a62c42e3ea148a82455de8c0aa1dce520b5f7a368cb",
+      "bytes": 415466,
       "fields": 4,
-      "rows": 7122,
+      "rows": 7123,
       "dialect": {
         "csv": {
           "delimiter": ","
@@ -97,10 +97,10 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:f9abe431f70e9b4fd6b7f8a3ec1289648162414f1306d98c5e5fb7e24188fa6c",
-      "bytes": 57994,
+      "hash": "sha256:7bea66c2c4f504d04c514e62143081ee880d291c0d796b320c16692894fe186e",
+      "bytes": 58057,
       "fields": 4,
-      "rows": 844,
+      "rows": 845,
       "dialect": {
         "csv": {
           "delimiter": ","
@@ -310,5 +310,5 @@
       }
     }
   ],
-  "updated_at": "2024-10-09T09:37:47"
+  "updated_at": "2024-10-10T09:38:28"
 }
