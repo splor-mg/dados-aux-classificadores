@@ -13,12 +13,10 @@ def transform_resource(resource_name: str, source_descriptor: str = 'datapackage
 
     package = Package(source_descriptor)
     resource = package.get_resource(resource_name)
-    resource = package.get_resource('uo')
-
     schema = Schema.from_descriptor(f'schemas/{resource_name}.yaml')
-
     resource.transform(transform_pipeline)
     table = resource.to_petl()
+
     for field in resource.schema.fields:
         target = field.custom.get('target')
         target = target if target else as_identifier(field.name)
