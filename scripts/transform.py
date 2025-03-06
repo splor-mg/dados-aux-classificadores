@@ -35,8 +35,20 @@ def transform_resource(resource_name: str, source_descriptor: str = 'datapackage
 
     if resource_name == "uo":
         table = etl.convert(table, 'ano', int)
+        table = etl.convert(table, 'uo_cod', int)
         max_uo_cod_ano = table.cut('uo_cod', 'ano').rowreduce(key='uo_cod', reducer=lambda key, rows: (key, max(row['ano'] for row in rows)), header=['uo_cod', 'max_ano'])
-        uo_sigla_current = etl.leftjoin(max_uo_cod_ano, table, lkey=['uo_cod', 'max_ano'], rkey=['uo_cod', 'ano']).cut('uo_cod', 'uo_sigla').rename('uo_sigla', 'uo_sigla_current')
+
+        print("max_uo_cod_ano before join:")
+        print(list(etl.data(max_uo_cod_ano.cut('uo_cod', 'max_ano'))))  # Ensure these columns exist
+
+        print("table before join:")
+        print(list(etl.data(table.cut('uo_cod', 'ano', 'uo_sigla'))))
+
+        uo_sigla_current = etl.leftjoin(max_uo_cod_ano, table, lkey=['uo_cod', 'max_ano'], rkey=['uo_cod', 'ano']).cut('uo_cod', 'uo_sigla').rename('uo_sigla', 'uo_sigla_current').cache()
+
+        print("uo_sigla_current after join:")
+        print(list(etl.data(uo_sigla_current)) if uo_sigla_current else "None")
+
         table = table.leftjoin(uo_sigla_current, key='uo_cod')
 
     table = etl.addfield(table, f'chave_{resource.name}', lambda row: '|'.join(str(row[key]) for key in schema.primary_key), index=0)
