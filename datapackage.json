@@ -54,10 +54,10 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:5b3aa3e349591bb68bc73b0fa0fcd70a8657992e1985eb2d19a18581eb3b5715",
-      "bytes": 410176,
+      "hash": "sha256:d8effb7f3f96923cf695df2ebbbe0f6808a2c2994c6af188e3b74cee650974f3",
+      "bytes": 413451,
       "fields": 4,
-      "rows": 7032,
+      "rows": 7085,
       "dialect": {
         "csv": {
           "delimiter": ","
@@ -212,10 +212,10 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:860e01589e9f44dff95da4daec996e8d3a2659ce1bb8b1e57873ee1ea5b85533",
-      "bytes": 1028509,
+      "hash": "sha256:e45e9758e9a1808087a0f37841f888eef9cbd30bbaf6335184f32cb56f9549b2",
+      "bytes": 949082,
       "fields": 4,
-      "rows": 9301,
+      "rows": 8736,
       "dialect": {
         "csv": {
           "delimiter": ","
@@ -255,9 +255,9 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:2ea192437db5f1225a1f973251d5581cc131044259e26deafd458c650d6d749c",
-      "bytes": 255462,
-      "fields": 9,
+      "hash": "sha256:576acfc6e2f69faf15d29b35ea0e99bb0ac73c72e2aeab41d607645feb800da4",
+      "bytes": 267974,
+      "fields": 10,
       "rows": 1794,
       "dialect": {
         "csv": {
@@ -301,6 +301,10 @@
           {
             "name": "uo_sigla",
             "type": "string"
+          },
+          {
+            "name": "uo_sigla_current",
+            "type": "string"
           }
         ],
         "primaryKey": [
@@ -310,5 +314,5 @@
       }
     }
   ],
-  "updated_at": "2025-02-04T12:15:17"
+  "updated_at": "2025-03-10T19:02:37"
 }
