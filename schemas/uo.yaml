@@ -26,6 +26,9 @@ fields:
   - name: uo_sigla
     type: string
 
+  - name: uo_sigla_current
+    type: string
+
 primaryKey:
   - ano
   - uo_cod
