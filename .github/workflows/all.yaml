@@ -24,13 +24,13 @@ jobs:
       with:
         context: .
         push: true
-        tags: fjuniorr/${{ github.event.repository.name }}:latest
-        cache-from: type=registry,ref=fjuniorr/${{ github.event.repository.name }}:latest
+        tags: splormg/${{ github.event.repository.name }}:latest
+        cache-from: type=registry,ref=splormg/${{ github.event.repository.name }}:latest
         cache-to: type=inline
     - name: ETL pipeline
       env: 
         GMAILR_KEY: ${{ secrets.GMAILR_KEY }}
-      run: docker run -e GMAILR_KEY=$GMAILR_KEY --rm --mount type=bind,source=${PWD},target=/project fjuniorr/${{ github.event.repository.name }} make all
+      run: docker run -e GMAILR_KEY=$GMAILR_KEY --rm --mount type=bind,source=${PWD},target=/project splormg/${{ github.event.repository.name }} make all
     - name: Publish data package
       run: |-
         git config user.name "Automated"
