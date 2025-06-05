@@ -54,8 +54,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:138dcc4f1520ffce1c4920ef21ae01fee858c01f21b749e7007eea0590cc8ab2",
-      "bytes": 414872,
+      "hash": "sha256:187f35afd4deab87f9baf0ae8306b9362e643abec677dc495ecd48c73b7d9aed",
+      "bytes": 414861,
       "fields": 4,
       "rows": 7111,
       "dialect": {
@@ -314,5 +314,5 @@
       }
     }
   ],
-  "updated_at": "2025-06-04T09:42:27"
+  "updated_at": "2025-06-05T09:42:16"
 }
