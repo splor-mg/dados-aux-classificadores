@@ -212,10 +212,10 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:c7ddc804feeff6638bf1da799018a16c809ffa2377846c32cc199a0d1226b35c",
-      "bytes": 952609,
+      "hash": "sha256:033f41e4e239d67fcc05f1c0817505ec7d99e7b73f76b729b03525dd150e9f38",
+      "bytes": 952895,
       "fields": 4,
-      "rows": 8772,
+      "rows": 8775,
       "dialect": {
         "csv": {
           "delimiter": ","
@@ -314,5 +314,5 @@
       }
     }
   ],
-  "updated_at": "2025-09-10T09:39:38"
+  "updated_at": "2025-09-11T09:38:22"
 }
