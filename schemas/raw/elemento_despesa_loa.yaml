@@ -1,0 +1,13 @@
+fields:
+  - name: ano
+    type: integer
+
+  - name: elemento_despesa_cod
+    type: integer
+
+  - name: elemento_despesa_desc
+    type: string
+
+primaryKey:
+  - ano
+  - elemento_despesa_cod

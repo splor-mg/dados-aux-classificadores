@@ -1,5 +1,5 @@
 name: aux_classificadores
-resources: 
+resources:
   - name: acao
     type: table
     path: ["data-raw/acao_rp.csv", "data-raw/acao_previous.csv", "data-raw/acao_current.csv"]
@@ -9,6 +9,18 @@ resources:
     encoding: utf-8
     dialect: dialect.yaml
     schema: schemas/raw/acao.yaml
+
+  - name: elemento_despesa_loa
+    type: table
+    description: |
+      Elemento de Despesa da LOA (Lei Orçamentária Anual).
+    path: "data-raw/elemento_despesa_loa.csv"
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    dialect: dialect.yaml
+    schema: schemas/raw/elemento_despesa_loa.yaml
 
   - name: elemento_item
     type: table
