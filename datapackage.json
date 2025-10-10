@@ -11,10 +11,10 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:a47755d33805a90171a0750e02aac060a20a923a33ac88007b44100bc00e6949",
-      "bytes": 1086428,
+      "hash": "sha256:c7c86bd7686f0d4f17aab76907fb551ff14bf7f2a63caf468d882ef05644bcf0",
+      "bytes": 1032363,
       "fields": 4,
-      "rows": 14826,
+      "rows": 14070,
       "dialect": {
         "csv": {
           "delimiter": ","
@@ -54,10 +54,10 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:3a3cdf3727fc2177298718048ac8fd388e17c2688d7403874a60921dc761e465",
-      "bytes": 416748,
+      "hash": "sha256:f3182ed8e3ae98280dd74024afb1b0954dc07cf11989a360d018543124546a52",
+      "bytes": 407097,
       "fields": 4,
-      "rows": 7141,
+      "rows": 6987,
       "dialect": {
         "csv": {
           "delimiter": ","
@@ -97,10 +97,10 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:b231471b951a3620ba9bb951b5a1f9618b647adbc989d1f178fd980dc21035ef",
-      "bytes": 59536,
+      "hash": "sha256:cdf30a122d8a5de57f716a96bd50bcb9755df50accf54048df33f1e5f601d854",
+      "bytes": 55079,
       "fields": 4,
-      "rows": 862,
+      "rows": 805,
       "dialect": {
         "csv": {
           "delimiter": ","
@@ -140,10 +140,10 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:1819c15b30a2b6c7dbf029c8df2975b3eca3dcd2bdca8e63a64855cac8bbb2f3",
-      "bytes": 4351149,
+      "hash": "sha256:395bdb2dba6adecbfa940d75d70ce0f6b01b5e9352e7b500cec9cfd0e56ae935",
+      "bytes": 4198350,
       "fields": 11,
-      "rows": 18966,
+      "rows": 18071,
       "dialect": {
         "csv": {
           "delimiter": ","
@@ -255,10 +255,10 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:bec7ab9a87fdefa5b3469b87a61778d3d0f2f95258039e134fbc96ca4449b597",
-      "bytes": 268152,
+      "hash": "sha256:aca304a70ca934227176c60fd8001959aede936093eb77cd1c894c3a9e8600b5",
+      "bytes": 255388,
       "fields": 10,
-      "rows": 1795,
+      "rows": 1709,
       "dialect": {
         "csv": {
           "delimiter": ","
@@ -314,5 +314,5 @@
       }
     }
   ],
-  "updated_at": "2025-10-09T09:39:58"
+  "updated_at": "2025-10-10T09:39:37"
 }
