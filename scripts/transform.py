@@ -21,7 +21,8 @@ def transform_resource(resource_name: str, source_descriptor: str = 'datapackage
         target = field.custom.get('target')
         target = target if target else as_identifier(field.name)
         table = etl.rename(table, field.name, target)
-        table = etl.select(table, "ano", lambda v: v >= 2008)
+
+    table = etl.select(table, "ano", lambda v: v is not None and v >= 2008)
 
     if resource_name == "elemento_item":
 
