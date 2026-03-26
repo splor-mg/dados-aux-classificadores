@@ -204,6 +204,52 @@
       }
     },
     {
+      "name": "natureza_despesa",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/natureza_despesa.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:8bb733bbe07f2a3d8a600940974f5b6487a7b1e884d9ef873e89c65a514f9501",
+      "bytes": 493,
+      "fields": 5,
+      "rows": 7,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer"
+          },
+          {
+            "name": "categoria_cod",
+            "type": "integer"
+          },
+          {
+            "name": "categoria_desc",
+            "type": "string"
+          },
+          {
+            "name": "grupo_cod",
+            "type": "integer"
+          },
+          {
+            "name": "grupo_desc",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "ano"
+        ]
+      }
+    },
+    {
       "name": "natureza_receita",
       "type": "table",
       "profile": "tabular-data-resource",
@@ -314,5 +360,5 @@
       }
     }
   ],
-  "updated_at": "2026-03-05T23:12:45"
+  "updated_at": "2026-03-26T15:13:35"
 }

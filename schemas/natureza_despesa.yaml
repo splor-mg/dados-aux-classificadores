@@ -1,0 +1,18 @@
+fields:
+  - name: ano
+    type: integer
+
+  - name: categoria_cod
+    type: integer
+
+  - name: categoria_desc
+    type: string
+
+  - name: grupo_cod
+    type: integer
+
+  - name: grupo_desc
+    type: string
+
+primaryKey:
+  - ano
