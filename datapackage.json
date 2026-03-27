@@ -212,7 +212,7 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:8bb733bbe07f2a3d8a600940974f5b6487a7b1e884d9ef873e89c65a514f9501",
+      "hash": "sha256:6a48595b1a46072e042ddfa22b249e881bc2760709385708cd4d38d0fd5ea00a",
       "bytes": 493,
       "fields": 5,
       "rows": 7,
@@ -228,19 +228,19 @@
             "type": "integer"
           },
           {
-            "name": "categoria_cod",
-            "type": "integer"
-          },
-          {
-            "name": "categoria_desc",
-            "type": "string"
-          },
-          {
             "name": "grupo_cod",
             "type": "integer"
           },
           {
             "name": "grupo_desc",
+            "type": "string"
+          },
+          {
+            "name": "categoria_cod",
+            "type": "integer"
+          },
+          {
+            "name": "categoria_desc",
             "type": "string"
           }
         ],
@@ -360,5 +360,5 @@
       }
     }
   ],
-  "updated_at": "2026-03-26T15:13:35"
+  "updated_at": "2026-03-27T07:27:06"
 }

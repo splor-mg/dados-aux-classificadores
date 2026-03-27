@@ -1,8 +1,8 @@
-chave_natureza_despesa,ano,categoria_cod,categoria_desc,grupo_cod,grupo_desc
-2026,2026,3,Despesas Correntes,1,Pessoal e Encargos Sociais
-2026,2026,3,Despesas Correntes,2,Juros e Encargos da Dívida
-2026,2026,3,Despesas Correntes,3,Outras Despesas Correntes
-2026,2026,4,Despesas de Capital,4,Investimentos
-2026,2026,4,Despesas de Capital,5,Inversões Financeiras
-2026,2026,4,Despesas de Capital,6,Amortização da Dívida
+chave_natureza_despesa,ano,grupo_cod,grupo_desc,categoria_cod,categoria_desc
+2026,2026,1,Pessoal e Encargos Sociais,3,Despesas Correntes
+2026,2026,2,Juros e Encargos da Dívida,3,Despesas Correntes
+2026,2026,3,Outras Despesas Correntes,3,Despesas Correntes
+2026,2026,4,Investimentos,4,Despesas de Capital
+2026,2026,5,Inversões Financeiras,4,Despesas de Capital
+2026,2026,6,Amortização da Dívida,4,Despesas de Capital
 2026,2026,9,Reserva de Contingência,9,Reserva de Contingência
