@@ -1,5 +1,5 @@
 name: aux_classificadores
-resources: 
+resources:
   - name: acao
     type: table
     path: ["data-raw/acao_rp.csv", "data-raw/acao_previous.csv", "data-raw/acao_current.csv"]
@@ -39,6 +39,16 @@ resources:
     encoding: utf-8
     dialect: dialect.yaml
     schema: schemas/raw/funcional_programatica.yaml
+
+  - name: natureza_despesa
+    type: table
+    path: ["data-raw/natureza_despesa.csv"]
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    dialect: dialect.yaml
+    schema: schemas/raw/natureza_despesa.yaml
 
   - name: natureza_receita
     type: table
